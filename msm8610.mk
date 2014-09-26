@@ -129,3 +129,7 @@ gaia/profile/defaults/pref/lmk.js: gaia/profile.tar.gz
 LOCAL_PATH:=$(dir $(firstword $(MAKEFILE_LIST)))
 GAIA_DISTRIBUTION_SRC_FILES:=$(GAIA_DISTRIBUTION_SRC_FILES)
 GAIA_DISTRIBUTION_SRC_FILES+=$(wildcard $(LOCAL_PATH)/gaia_distribution/*)
+
+# Target-specific Gecko configuration
+# Enable DSP-based EC/NS for webRTC
+GECKO_CONFIGURE_ARGS+=--enable-hardware-aec
