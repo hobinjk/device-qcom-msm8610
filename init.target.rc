@@ -33,7 +33,7 @@ on early-init
     write /sys/kernel/mm/ksm/pages_to_scan 100
     write /sys/kernel/mm/ksm/sleep_millisecs 500
     write /sys/kernel/mm/ksm/run 1
-    write /sys/block/zram0/disksize 192M
+    write /sys/block/zram0/disksize 100M
 
 on fs
     mount_all fstab.qcom
