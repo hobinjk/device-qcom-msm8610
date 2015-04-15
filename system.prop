@@ -133,6 +133,9 @@ use.voice.path.for.pcm.voip=true
 #
 ro.fm.transmitter=false
 
+# set max background services
+ro.config.max_starting_bg=8
+
 #enable dsp gapless mode by default
 audio.offload.gapless.enabled=true
 
