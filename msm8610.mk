@@ -55,6 +55,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += wcnss_service
 
+BOARD_USES_QCNE := true
+PRODUCT_PACKAGES += services-ext
+
 # Sensors feature definition file/s
 PRODUCT_COPY_FILES += \
    frameworks/native/data/etc/android.hardware.sensor.barometer.xml:system/etc/permissions/android.hardware.sensor.barometer.xml
