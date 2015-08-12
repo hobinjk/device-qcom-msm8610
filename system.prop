@@ -91,6 +91,8 @@ ro.sys.fw.bg_apps_limit=20
 # System property for cabl
 ro.qualcomm.cabl=1
 
+# CNE spoofing for PowerManagerService to realize that wakelocks exist
+persist.cne.feature=4
 
 # system prop for NFC DT
 ro.nfc.port=I2C
